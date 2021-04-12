@@ -1,0 +1,43 @@
+set(PIPE_IN_TEST_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/test-pipe-in.sh)
+
+# built-in tests
+function(add_test_simple_schema name schema instance)
+    add_test(
+        NAME ${name}
+        COMMAND ${PIPE_IN_TEST_SCRIPT}
+            $<TARGET_FILE:json-schema-validate>
+            ${schema}
+            ${instance}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+endfunction()
+
+file(GLOB TEST_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/*)
+
+foreach(DIR ${TEST_DIRS})
+    if(IS_DIRECTORY ${DIR})
+        add_subdirectory(${DIR})
+    endif()
+endforeach()
+
+add_executable(uri uri.cpp)
+target_link_libraries(uri nlohmann_json_schema_validator)
+add_test(NAME uri COMMAND uri)
+
+add_executable(errors errors.cpp)
+target_link_libraries(errors nlohmann_json_schema_validator)
+add_test(NAME errors COMMAND errors)
+
+add_executable(issue-70 issue-70.cpp)
+target_link_libraries(issue-70 nlohmann_json_schema_validator)
+add_test(NAME issue-70 COMMAND issue-70)
+
+add_executable(issue-70-root-schema-constructor issue-70-root-schema-constructor.cpp)
+target_link_libraries(issue-70-root-schema-constructor nlohmann_json_schema_validator)
+add_test(NAME issue-70-root-schema-constructor COMMAND issue-70-root-schema-constructor)
+
+# Unit test for string format checks
+add_executable("string-format-check-test" "string-format-check-test.cpp")
+target_include_directories("string-format-check-test" PRIVATE "${PROJECT_SOURCE_DIR}/src/")
+target_link_libraries("string-format-check-test" nlohmann_json_schema_validator)
+
+add_test(NAME "string-format-check-test" COMMAND "string-format-check-test")

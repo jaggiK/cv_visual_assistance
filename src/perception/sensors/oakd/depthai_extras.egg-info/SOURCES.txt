@@ -1,0 +1,4 @@
+depthai_extras.egg-info/PKG-INFO
+depthai_extras.egg-info/SOURCES.txt
+depthai_extras.egg-info/dependency_links.txt
+depthai_extras.egg-info/top_level.txt
