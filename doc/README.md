@@ -44,6 +44,14 @@ The notebook also includes steps for optimizing models using OpenVINO.
 
 `cv_visual_assistance/src/perception/sensors/oakd/train_depth_image.py` script can be used to train MinniVGGNet for training on depth images for elevational changes
 
+#Running the full setup
+
+`python speech_actions.py`
+
+The above command will start the voice recognition system through which rest of the stack can be started via audio keywords.
+
+say the word "start", this should run the multiple windows for GPS and perception. "exit" will terminate the processes.
+
 
 
 
