@@ -44,7 +44,10 @@ The notebook also includes steps for optimizing models using OpenVINO.
 
 `cv_visual_assistance/src/perception/sensors/oakd/train_depth_image.py` script can be used to train MinniVGGNet for training on depth images for elevational changes
 
-#Running the full setup
+Please follow readme at `cv_visual_assistance/src/ml/trafficsigns` for training TrafficSIgnNet
+
+
+# Running the full setup
 
 `python speech_actions.py`
 
