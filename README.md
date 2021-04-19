@@ -46,6 +46,15 @@ The notebook also includes steps for optimizing models using OpenVINO.
 
 Please follow readme at `cv_visual_assistance/src/ml/trafficsigns` for training TrafficSIgnNet
 
+For details on OpenVINO optimization and inferencing please refer to `cv_visual_assistance/src/perception/openvino/examples/README.md`
+
+## Models
+
+Elevation model can be found here : `cv_visual_assistance/src/perception/sensors/oakd/openvino_models/elevation_model/`
+
+OpenVINO semantic segmentation model along with other models can be found here : `https://github.com/jaggiK/cv_visual_assistance/tree/master/src/perception/sensors/oakd/openvino_models/intel`
+
+Traffic sign model : `cv_visual_assistance/src/perception/sensors/oakd/openvino_models/traffic_signs/` 
 
 # Running the full setup
 
