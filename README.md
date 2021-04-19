@@ -54,7 +54,9 @@ Elevation model can be found here : `cv_visual_assistance/src/perception/sensors
 
 OpenVINO semantic segmentation model along with other models can be found here : `https://github.com/jaggiK/cv_visual_assistance/tree/master/src/perception/sensors/oakd/openvino_models/intel`
 
-Traffic sign model : `cv_visual_assistance/src/perception/sensors/oakd/openvino_models/traffic_signs/` 
+Traffic sign model : `cv_visual_assistance/src/perception/sensors/oakd/openvino_models/traffic_signs/`
+
+Vosk speech model: `https://github.com/jaggiK/cv_visual_assistance/tree/master/src/perception/sensors/oakd/speech_model`
 
 # Running the full setup
 
