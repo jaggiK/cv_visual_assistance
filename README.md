@@ -33,7 +33,7 @@ Object detection model dataset 300x300 can be found here : https://drive.google.
 
 Object detection model dataset 400x400 can be found here : https://drive.google.com/drive/folders/15UoVreqdEoQ1WpBIwM1z9L6P2A9vQ2om?usp=sharing
 
-Object detection model dataset 400x400 can be found here : https://drive.google.com/drive/folders/1_M5pVEadWE7oauOXqa5TBtrvrJzqdpny?usp=sharing
+Object detection model dataset 450x450 can be found here : https://drive.google.com/drive/folders/1_M5pVEadWE7oauOXqa5TBtrvrJzqdpny?usp=sharing
 
 Combined traffic dataset can be found here : https://drive.google.com/drive/folders/1K5g6XJF6RIMA_J82POtwkdnpHfuRRBa1?usp=sharing
 
