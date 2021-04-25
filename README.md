@@ -60,7 +60,7 @@ Vosk speech model: `https://github.com/jaggiK/cv_visual_assistance/tree/master/s
 
 # Running the full setup
 
-`python speech_actions.py`
+Run `python vosk_speech.py` from `cv_visual_assistance/src/perception/sensors/oakd/` folder
 
 The above command will start the voice recognition system through which rest of the stack can be started via audio keywords.
 
