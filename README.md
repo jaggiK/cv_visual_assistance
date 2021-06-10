@@ -1,4 +1,4 @@
-# Welcome to visual assitance system using OAK-D and ege AI devices
+# Welcome to visual assitance system using OAK-D and edge AI devices
 
 
 Hardware: 
